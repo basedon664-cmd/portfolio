@@ -25,7 +25,7 @@ export default function PremiumLoader() {
   if (isLoading && animationData) {
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
-        <div className="w-150 h-150">
+        <div className="w-130 h-130">
           <Lottie animationData={animationData} loop={true} />
         </div>
       </div>
@@ -42,3 +42,4 @@ export default function PremiumLoader() {
 
   return null;
 }
+
