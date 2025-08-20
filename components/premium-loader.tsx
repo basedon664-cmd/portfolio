@@ -5,6 +5,7 @@ import Lottie from "lottie-react";
 export default function PremiumLoader() {
   const [animationData, setAnimationData] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [isFading, setIsFading] = useState(false);
 
   useEffect(() => {
     fetch("/loader.json")
@@ -14,18 +15,26 @@ export default function PremiumLoader() {
   }, []);
 
   useEffect(() => {
-    // Hide loader after 10 seconds
-    const timer = setTimeout(() => {
-      setIsLoading(false);
+    // Start fade out after 10 seconds
+    const fadeTimer = setTimeout(() => {
+      setIsFading(true);
     }, 10000);
 
-    return () => clearTimeout(timer);
+    // Hide loader completely after fade animation (1 second)
+    const hideTimer = setTimeout(() => {
+      setIsLoading(false);
+    }, 11000);
+
+    return () => {
+      clearTimeout(fadeTimer);
+      clearTimeout(hideTimer);
+    };
   }, []);
 
   if (isLoading && animationData) {
     return (
-      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
-        <div className="w-110 h-110">
+      <div className={`fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-1000 ease-in-out ${isFading ? 'opacity-0' : 'opacity-100'}`}>
+        <div className="w-150 h-150">
           <Lottie animationData={animationData} loop={true} />
         </div>
       </div>
@@ -34,7 +43,7 @@ export default function PremiumLoader() {
 
   if (isLoading && !animationData) {
     return (
-      <div className="fixed inset-0 z-0 flex items-center justify-center bg-black">
+      <div className={`fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-1000 ease-in-out ${isFading ? 'opacity-0' : 'opacity-100'}`}>
         <p className="text-white">BasedOn Loading...</p>
       </div>
     );
@@ -42,4 +51,3 @@ export default function PremiumLoader() {
 
   return null;
 }
-
