@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Created with basedon",  
   generator: "basedon.dev",
   openGraph: {
-    images: ["https://i.postimg.cc/fSYmjJdt/bo.jpg"], // your one image
+    images: ["https://i.ibb.co/QFxxvM9M/bo.jpg"], // your one image
   },
 };
 
