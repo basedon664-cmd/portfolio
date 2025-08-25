@@ -183,14 +183,14 @@ With a focus on user experience, clean design, and the latest technologies, we e
                 />
 
                 <p className="mt-4 max-w-[42ch] text-lg text-white/70">
-                  Brandon is a product designer based in New York. He helps early‑stage startups ship beautiful, usable
+                  Brandon is a product designer based in all over. He helps early‑stage startups ship beautiful, usable
                   software fast.
                 </p>
 
                 {/* CTAs */}
                 <div className="mt-6 flex flex-wrap items-center gap-3">
                   <Button asChild size="lg" className="rounded-full">
-                    <Link href="mailto:brandon@portfolio.dev">
+                    <Link href="https://forms.gle/Fs26iKgT2bnimHqu5">
                       Your Services, Your Way
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
