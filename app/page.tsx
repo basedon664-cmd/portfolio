@@ -201,12 +201,12 @@ With a focus on user experience, clean design, and the latest technologies, we e
                 <div className="mt-10">
                   <p className="mb-3 text-xs font-semibold tracking-widest text-white/50">COMPANIES I'VE WORKED WITH</p>
                   <ul className="grid grid-cols-2 gap-x-6 gap-y-3 text-2xl font-black text-white/25 sm:grid-cols-3">
-                    <li>Space Y</li>
-                    <li>Melta</li>
-                    <li>ClosedAI</li>
-                    <li>Booble</li>
-                    <li>Lentflix</li>
-                    <li>Xwitter</li>
+                    <li>Marketing</li>
+                    <li>Meta</li>
+                    <li>Google</li>
+                    <li>LLMs / GPTs</li>
+                    <li>Productive AI Use</li>
+                    <li>Suggestions</li>
                   </ul>
                 </div>
               </div>
@@ -226,8 +226,8 @@ With a focus on user experience, clean design, and the latest technologies, we e
                 priority={p.priority}
                 gradientFrom={p.gradientFrom}
                 gradientTo={p.gradientTo}
-                imageContainerClassName="lg:h-full"
-                containerClassName="lg:h-[calc(100svh-2rem)]"
+                imageContainerClassName="lg:h-full flex items-center justify-center"
+                containerClassName="lg:h-[55svh]"
                 revealDelay={idx * 0.06}
               />
             ))}
