@@ -65,7 +65,7 @@ We also provide basic engagement reports to track your performance and run targe
 Our packages include sending 4 or 8 professionally designed emails per month, crafted with attention-grabbing subject lines and compelling content. Each plan comes with custom templates—1 template for our starter package and 2 unique designs for the advanced package. 
 
 For higher performance, we implement A/B testing to identify which subject lines, layouts, or calls-to-action deliver the best results. You’ll also receive a monthly performance report highlighting key metrics like open rates, click-through rates, and conversions—giving you a clear view of what’s working and how your campaigns are growing your business.`,
-  imageSrc: "", // Add an email/marketing illustration here
+  imageSrc: "https://i.ibb.co/cKM03NLv/Blue-and-White-3-D-Modern-Back-to-School-Youtube-Intro.gif", // Add an email/marketing illustration here
   tags: ["Email Campaigns", "A/B Testing", "Lead Nurturing", "Analytics", "Conversions"],
   href: "#email-marketing",
   priority: false,
